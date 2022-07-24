@@ -1,11 +1,11 @@
 import './App.css'
-import Box from './components/Box';
+import QuoteBox from './components/QuoteBox';
 
 
 function App() {
   return (
     <div className="App">
-      <Box/>
+      <QuoteBox/>
     </div>
   )
 }

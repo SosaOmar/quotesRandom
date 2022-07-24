@@ -4,7 +4,7 @@ import quotes from "../json/quotes.json"
 import Boton from './Boton'
 
 
-const Box = () => {
+const QuoteBox = () => {
 
   const generateRandomColor = () => {
     return "hsl(" +
@@ -41,7 +41,7 @@ const Box = () => {
   return (
     <div className="box" style={{ backgroundColor: `${color}` }}>
       <div className="cajaFrase">
-        <i style={{ color: `${color}` }} class="fa-solid fa-pen-clip"></i>
+        <i style={{ color: `${color}` }} className="fa-solid fa-pen-clip"></i>
         <div className="authors">
           < p style={{ color: `${color}` }}> {quotes[`${randomNumber}`].quote}</p >
           <p style={{ color: `${color}` }}> {quotes[`${randomNumber}`].author}</p>
@@ -52,4 +52,4 @@ const Box = () => {
   )
 }
 
-export default Box
+export default QuoteBox
